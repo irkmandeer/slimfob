@@ -10,7 +10,7 @@ Please see https://github.com/PrismarineJS/mineflayer
 
 * git clone https://github.com/irkmandeer/slimfob.git
 * cd slimfob
-* npm submodule
+* npm run submodule
 * npm install
 * node bot.js
   
