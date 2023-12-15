@@ -1,19 +1,11 @@
 // process.env.DEBUG = 'minecraft-protocol'
 require('util').inspect.defaultOptions.depth = 10
 
-
 const { pathfinder } = require('mineflayer-pathfinder')
-
-
-
 const { createBot } = require('./lib/loader')
 
 const auth = require('./credentials')
 const options = {
-
-    // version: '1.20.0',
-    version: '1.20.50',
-
 }
 const bot = createBot({ ...auth, ...options })
 
@@ -28,6 +20,11 @@ process.on('SIGINT', (signal) => {
 
     console.log('(SIGINT)')
     bot.quit('Quit')
+})
+
+bot.on('blockUpdate', (oldBlock, newBlock) => {
+
+    console.log('Block Updated:', { block: newBlock?.name, position: newBlock.position })
 })
 
 
