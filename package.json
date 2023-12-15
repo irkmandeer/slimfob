@@ -2,7 +2,7 @@
   "name": "slimfob",
   "private": true,
   "scripts": {
-    "submodule": "rm package-lock.json && npm install --dev-only && git submodule update --init --recursive && npm link --save ./submodules/node-minecraft-data ./submodules/prismarine-chunk ./submodules/prismarine-registry ./submodules/prismarine-block && rm package-lock.json",
+    "submodule": "npm install --dev-only && git submodule update --init --recursive && npm link --save ./submodules/node-minecraft-data ./submodules/prismarine-chunk ./submodules/prismarine-registry ./submodules/prismarine-block && rm package-lock.json",
     "preinstall": "echo preinstall",
     "install": "echo install",
     "postinstall": "echo postinstall",
