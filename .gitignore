@@ -1,4 +1,5 @@
 node_modules/
+scraps/
 package-lock.json
 .vscode
 test/**/server_*
