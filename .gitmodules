@@ -10,3 +10,7 @@
 	path = submodules/prismarine-registry
 	url = https://github.com/irkmandeer/prismarine-registry.git
 	branch = slimfob
+[submodule "submodules/prismarine-block"]
+	path = submodules/prismarine-block
+	url = https://github.com/irkmandeer/prismarine-block.git
+	branch = slimfob

@@ -2,7 +2,7 @@
   "name": "slimfob",
   "private": true,
   "scripts": {
-    "submodule": "npm install --dev-only && git submodule update --init --recursive && npm link ./submodules/node-minecraft-data ./submodules/prismarine-chunk ./submodules/prismarine-registry",
+    "submodule": "rm package-lock.json && npm install --dev-only && git submodule update --init --recursive && npm link --save ./submodules/node-minecraft-data ./submodules/prismarine-chunk ./submodules/prismarine-registry ./submodules/prismarine-block && rm package-lock.json",
     "preinstall": "echo preinstall",
     "install": "echo install",
     "postinstall": "echo postinstall",
@@ -16,11 +16,11 @@
     "typescript": "~5.2.2"
   },
   "dependencies": {
-    "bedrock-protocol": "^3.33.0",
-    "prismarine-nbt": "^2.2.1",
-    "prismarine-chat": "^1.5.0",
-    "prismarine-item": "^1.10.1",
-    "cli-color": "^2.0.3",
-    "fnv1a": "^1.1.1"
+    "minecraft-data": "file:submodules/node-minecraft-data",
+    "mineflayer-pathfinder": "^2.4.5",
+    "prismarine-block": "file:submodules/prismarine-block",
+    "prismarine-chunk": "file:submodules/prismarine-chunk",
+    "prismarine-registry": "file:submodules/prismarine-registry",
+    "prismarine-world": "^3.6.2"
   }
 }
