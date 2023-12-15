@@ -13,4 +13,4 @@ Please see https://github.com/PrismarineJS/mineflayer
 * npm submodule
 * npm install
 * node bot.js
-* 
+  
