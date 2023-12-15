@@ -1,0 +1,12 @@
+ [submodule "submodules/node-minecraft-data"]
+	path = submodules/node-minecraft-data
+	url = https://github.com/irkmandeer/node-minecraft-data.git
+	branch = slimfob
+[submodule "submodules/prismarine-chunk"]
+	path = submodules/prismarine-chunk
+	url = https://github.com/irkmandeer/prismarine-chunk.git
+	branch = slimfob
+[submodule "submodules/prismarine-registry"]
+	path = submodules/prismarine-registry
+	url = https://github.com/irkmandeer/prismarine-registry.git
+	branch = slimfob
