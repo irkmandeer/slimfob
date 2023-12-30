@@ -6,3 +6,4 @@ test/**/server_*
 # mc test server
 **/versions/*/*.json
 credentials.js
+profiles/
