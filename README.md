@@ -8,7 +8,7 @@ Please see https://github.com/PrismarineJS/mineflayer
 
 ### How to install and test
 
-* git clone https://github.com/irkmandeer/slimfob.git
+* git clone https://github.com/irkmandeer/slimfob.git --recursive
 * cd slimfob
 * npm run submodule
 * npm install
