@@ -7,3 +7,4 @@ test/**/server_*
 **/versions/*/*.json
 credentials.js
 profiles/
+relay.js
