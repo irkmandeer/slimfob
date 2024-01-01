@@ -34,28 +34,26 @@ async function testPlaceSign() {
         }
         if (bot.game.gameMode !== 'survival') await bot.chat('/gamemode survival')
 
+        if (block.name !== 'air') {
 
-      
-        // if (block.name !== 'air') {
+            await bot.dig(block)
 
-        //     await bot.dig(block)
+            await sleep(1)
+            for (const entity of Object.values(bot.entities).filter((e) => e.type === 'item')) {
 
-        //     await sleep(1)
-        //     for (const entity of Object.values(bot.entities).filter((e) => e.type === 'item')) {
+                await bot.pathfinder.goto(new GoalNearXZ(entity.position.x, entity.position.z, 1))
 
-        //         await bot.pathfinder.goto(new GoalNearXZ(entity.position.x, entity.position.z, 1))
+            }
+            await bot.pathfinder.goto(new GoalInvert(new GoalNearXZ(block.position.x, block.position.y, 2)))
+        }
 
-        //     }
-        //     await bot.pathfinder.goto(new GoalInvert(new GoalNearXZ(block.position.x, block.position.y, 2)))
-        // }
-
-        // var referenceBlock = bot.blockAt(block.position.offset(0, -1, 0))
-        // await bot.placeBlock(referenceBlock, new Vec3(0, 1, 0))
+        var referenceBlock = bot.blockAt(block.position.offset(0, -1, 0))
+        await bot.placeBlock(referenceBlock, new Vec3(0, 1, 0))
 
         //TODO: block_entity_data is not handles by world.js yet
         //TODO: Somehow need to wait for block_entity_data (maybe inside edit sign if no entity is set?)
         // Does not work, not closed yet await once(bot._client, 'block_entity_data')  
-        await sleep(1000)
+//        await sleep(1000)
 
         await bot.updateSign(bot.blockAt(block.position), 'Front') //front
         await bot.updateSign(bot.blockAt(block.position), 'Back', true) //back
