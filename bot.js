@@ -67,7 +67,7 @@ bot.on('inventoryItemChanged', (oldItem, newItem) => {
 
 
 // bot.once('spawn', () => { bot.physicsEnabled = false })
-//bot.once('spawn', debugFollowPlayer)
+bot.once('spawn', debugFollowPlayer)
 //bot.once('spawn', debugLookAtPlayer)
 //bot.once('spawn', debugConsume)
 

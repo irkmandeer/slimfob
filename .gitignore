@@ -10,3 +10,6 @@ test/**/server_*
 credentials.js
 profiles/
 relay.js
+ds.skinData.json
+en_US.lang
+credentials.js
