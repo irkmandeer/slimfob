@@ -16,11 +16,20 @@
     "typescript": "~5.2.2"
   },
   "dependencies": {
+    "bedrock-protocol": "^3.34.0",
+    "discord": "^0.8.2",
+    "discord.js": "^14.14.1",
+    "fnv1a": "^1.1.1",
+    "jimp": "^0.22.10",
+    "log-to-file": "^3.0.3",
     "minecraft-data": "file:submodules/node-minecraft-data",
+    "mineflayer-collectblock": "^1.4.1",
     "mineflayer-pathfinder": "^2.4.5",
+    "pngjs": "^7.0.0",
     "prismarine-block": "file:submodules/prismarine-block",
     "prismarine-chunk": "file:submodules/prismarine-chunk",
     "prismarine-registry": "file:submodules/prismarine-registry",
-    "prismarine-world": "^3.6.2"
+    "prismarine-world": "^3.6.2",
+    "sanitize-filename": "^1.6.3"
   }
 }
