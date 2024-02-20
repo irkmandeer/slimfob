@@ -2,6 +2,8 @@ node_modules/
 scraps/
 package-lock.json
 .vscode
+data/
+faces/
 test/**/server_*
 # mc test server
 **/versions/*/*.json
